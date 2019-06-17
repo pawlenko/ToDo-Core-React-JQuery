@@ -1,7 +1,7 @@
 # ToDo Application
 Simple ToDo application made with .net core ( backend ) and react/jquery. We have two versions of client application ( frontend ) in two diffrent technologies : 
 
-- First one made in React set a default when you run project
+- First one made in React set as default when you run project
 - Second one use only Jquery. To open that version you need add /default to url for example : www.localhost:3000/default 
 
 
