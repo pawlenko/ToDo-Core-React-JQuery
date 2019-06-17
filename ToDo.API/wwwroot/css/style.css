@@ -1,0 +1,13 @@
+﻿.badge {
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.done {
+    background-color: yellowgreen !important;
+}
+
+.hidden{
+    display:none;
+}
