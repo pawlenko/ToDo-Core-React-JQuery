@@ -1,0 +1,153 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Unit.Test\\ToDo.Unit.Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\ToDo.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\ToDo.Business.csproj",
+        "projectName": "ToDo.Business",
+        "projectPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\ToDo.Business.csproj",
+        "packagesPath": "C:\\Users\\pawlenko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pawlenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj": {
+                "projectPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj",
+        "projectName": "ToDo.Data",
+        "projectPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Unit.Test\\ToDo.Unit.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Unit.Test\\ToDo.Unit.Test.csproj",
+        "projectName": "ToDo.Unit.Test",
+        "projectPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Unit.Test\\ToDo.Unit.Test.csproj",
+        "packagesPath": "C:\\Users\\pawlenko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Unit.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pawlenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\ToDo.Business.csproj": {
+                "projectPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\ToDo.Business.csproj"
+              },
+              "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj": {
+                "projectPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
