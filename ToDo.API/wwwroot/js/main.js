@@ -158,10 +158,31 @@
                     'Content-Type': 'application/json'
                 },
                 data: JSON.stringify(data),
-                success: callbackSuccess
+                success: callbackSuccess,
+                error: function (xhr) {
+                    addError(errorToText(xhr.responseText));
+                }
             });
     }
 
+    function addError(message) {
+        var errorDiv = "<div class='alert alert-danger alert - dismissible fade show' role='alert'>" + message +
+            "<button type = 'button' class='close' data-dismiss='alert' aria-label='Close'>" +
+            "<span aria-hidden='true'>&times;</span>" +
+            "</button>" +
+            "</div>";
+        $("#errorHolder").prepend(errorDiv);
+    }
+
+    function errorToText(message) {
+        if (message === 'TITTLE_IS_REQUIRED') {
+            return "PLEASE PROVIDE TITTLE";
+        } else if (message === 'NOT_EXIST') {
+            return "SELECTED ITEM NOT EXIST";
+        } else {
+            return "UNKNOWN ERROR";
+        }
+    }
 
 
 });
