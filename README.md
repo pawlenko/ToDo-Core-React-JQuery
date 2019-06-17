@@ -15,3 +15,5 @@ Simple ToDo application made with .net core ( backend ) and react/jquery. We hav
 - Second frontend made in Jquery
 - Usage of UnitTests
 - In memory database
+- Bootstrap
+- Fontawesome
