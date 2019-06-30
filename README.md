@@ -13,7 +13,9 @@ Simple ToDo application made with .net core ( backend ) and react/jquery. We hav
 - SPA 
 - First frontend made in React + TypeScript
 - Second frontend made in Jquery
-- Usage of UnitTests
+- Usage of Unit Tests
+- Example of using MOQ
 - In memory database
+- Automapper
 - Bootstrap
 - Fontawesome
