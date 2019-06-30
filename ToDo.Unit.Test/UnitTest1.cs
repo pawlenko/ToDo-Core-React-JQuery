@@ -1,6 +1,11 @@
+using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
+using Moq;
 using System.Threading.Tasks;
+using ToDo.API.API;
+using ToDo.API.Automapper;
+using ToDo.API.DTO;
 using ToDo.Business.Interface;
 using ToDo.Business.Repository;
 using ToDo.Data;
@@ -24,6 +29,35 @@ namespace ToDo.Unit.Test
              _repo = new ToDoElementRepository(context); 
         }
 
+
+        [Fact]
+        public async Task Controller_Add_ToDo_Test()
+        {
+            var mockRepo = new Mock<IToDoElementRepository>();
+
+            var myProfile = new AutomapperProfile();
+            var configuration = new MapperConfiguration(cfg => cfg.AddProfile(myProfile));
+
+
+            var temp = new ToDoElementAdd() { Priority = 1, Tittle = "test" };
+
+
+            mockRepo.Setup(x =>  x.CreateElementAsync(It.IsAny<ToDoElement>())).ReturnsAsync(new ToDoElement { Tittle = temp.Tittle, Priority = temp.Priority });
+
+            var controller = new ToDoController(mockRepo.Object, configuration.CreateMapper());
+
+            IActionResult result = (await controller.Post(temp));
+
+            Assert.IsType<OkObjectResult>(result);
+            var objectResponse = result as OkObjectResult;
+            Assert.Equal(200, objectResponse.StatusCode);
+            Assert.Equal(typeof(ToDoElementDTO), objectResponse.Value.GetType());
+
+            ToDoElementDTO resultCast = objectResponse.Value as ToDoElementDTO;
+
+            Assert.Equal(temp.Tittle, resultCast.Tittle);
+            Assert.Equal(temp.Priority, resultCast.Priority);
+        }
 
         [Fact]
         public async Task Add_ToDo()

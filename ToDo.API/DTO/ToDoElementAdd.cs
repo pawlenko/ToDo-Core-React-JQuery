@@ -8,5 +8,6 @@ namespace ToDo.API.DTO
     public class ToDoElementAdd
     {
         public string Tittle { get; set; }
+        public int Priority { get; set; }
     }
 }

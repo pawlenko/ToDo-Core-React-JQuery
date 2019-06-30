@@ -10,3 +10,15 @@ C:\Users\pawlenko\Desktop\TODO\ToDo\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.B
 C:\Users\pawlenko\Desktop\TODO\ToDo\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.csproj.CopyComplete
 C:\Users\pawlenko\Desktop\TODO\ToDo\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.dll
 C:\Users\pawlenko\Desktop\TODO\ToDo\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.pdb
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\bin\Debug\netcoreapp2.1\ToDo.Business.deps.json
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\bin\Debug\netcoreapp2.1\ToDo.Business.dll
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\bin\Debug\netcoreapp2.1\ToDo.Business.pdb
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\bin\Debug\netcoreapp2.1\ToDo.Data.dll
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\bin\Debug\netcoreapp2.1\ToDo.Data.pdb
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.csprojAssemblyReference.cache
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.csproj.CoreCompileInputs.cache
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.AssemblyInfoInputs.cache
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.AssemblyInfo.cs
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.csproj.CopyComplete
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.dll
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Business\obj\Debug\netcoreapp2.1\ToDo.Business.pdb

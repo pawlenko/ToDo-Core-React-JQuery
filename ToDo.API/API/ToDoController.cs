@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ToDo.API.DTO;
@@ -16,10 +17,13 @@ namespace ToDo.API.API
     {
 
         private IToDoElementRepository _repo;
+        private IMapper _mapper;
 
-        public ToDoController(IToDoElementRepository repo)
+
+        public ToDoController(IToDoElementRepository repo,IMapper mapper)
         {
             _repo = repo;
+            _mapper = mapper;
         }
 
 
@@ -27,17 +31,10 @@ namespace ToDo.API.API
         [HttpGet]
         public  async  Task<IActionResult> Get()
         {
-            var items = (await _repo.GetAllToDo()).Select(x => new ToDoElementDTO
-            {
-                Id = x.Id,
-                Tittle = x.Tittle,
-                CreateDate = x.CreateDate,
-                Done = x.Done
-              
-            });
+            var items = (await _repo.GetAllToDo());
+            var mappedItems = _mapper.Map<List<ToDoElementDTO>>(items);
 
-
-            return Ok(items);
+            return Ok(mappedItems);
         }
 
         // GET: api/ToDo/5
@@ -48,12 +45,8 @@ namespace ToDo.API.API
 
             if(item != null)
             {
-                var temp = new ToDoElementDTO();
-                temp.CreateDate = item.CreateDate;
-                temp.Id = item.Id;
-                temp.Tittle = item.Tittle;
-                temp.Done = item.Done;
-                return Ok(temp);
+                var mappedItem = _mapper.Map<ToDoElementDTO>(item);
+                return Ok(mappedItem);
             }
             else
                 return BadRequest("NOT_EXIST");
@@ -63,18 +56,22 @@ namespace ToDo.API.API
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] ToDoElementAdd state)
         {
-            if (string.IsNullOrEmpty(state.Tittle))
-                return BadRequest("TITTLE_IS_REQUIRED");
+
+            if(state.Priority>=1 && state.Priority <= 10)
+            {
+                if (string.IsNullOrEmpty(state.Tittle))
+                    return BadRequest("TITTLE_IS_REQUIRED");
+                else
+                {
+                    var itemToADD = _mapper.Map<ToDoElement>(state);
+                    var newToDoElem =  await _repo.CreateElementAsync(itemToADD);
+                    var mappedItem = _mapper.Map<ToDoElementDTO>(newToDoElem);
+                    return Ok(mappedItem);
+                }
+            }
             else
             {
-                var newToDoElem =  await _repo.CreateElementAsync(state.Tittle);
-
-                var temp = new ToDoElementDTO();
-                temp.CreateDate = newToDoElem.CreateDate;
-                temp.Id = newToDoElem.Id;
-                temp.Tittle = newToDoElem.Tittle;
-                temp.Done = newToDoElem.Done;
-                return Ok(temp);
+                return BadRequest("PRIORITY_INCORECT_RANGE");
             }
         }
 
@@ -90,9 +87,10 @@ namespace ToDo.API.API
 
             if (item != null)
             {
-                item.Done = state.Done;
-                item.Tittle = state.Tittle;
-                await _repo.UpdateToDoAsync(item);
+                var mappedItem = _mapper.Map(state, item);
+
+
+                await _repo.UpdateToDoAsync(mappedItem);
                 return Ok();
             }
             else

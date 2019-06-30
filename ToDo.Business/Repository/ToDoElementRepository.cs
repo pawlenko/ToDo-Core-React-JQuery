@@ -21,12 +21,9 @@ namespace ToDo.Business.Repository
             return await FindAsync(x => x.Id == id);
         }
 
-        public async Task<ToDoElement> CreateElementAsync(string Tittle)
+        public async Task<ToDoElement> CreateElementAsync(ToDoElement state)
         {
-            var newPlanet = new ToDoElement();
-            newPlanet.Tittle = Tittle;
-
-            return await CreateAsync(newPlanet);
+            return await CreateAsync(state);
         }
 
         public async Task<ToDoElement> UpdateToDoAsync(ToDoElement state)

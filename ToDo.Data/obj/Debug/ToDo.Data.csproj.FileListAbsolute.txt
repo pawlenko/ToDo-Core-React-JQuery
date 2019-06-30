@@ -10,3 +10,15 @@ C:\Users\pawlenko\Desktop\TODO\ToDo\ToDo.Data\obj\Debug\ToDo.Data.csproj.CoreCom
 C:\Users\pawlenko\Desktop\TODO\ToDo\ToDo.Data\obj\Debug\ToDo.Data.csproj.CopyComplete
 C:\Users\pawlenko\Desktop\TODO\ToDo\ToDo.Data\obj\Debug\ToDo.Data.dll
 C:\Users\pawlenko\Desktop\TODO\ToDo\ToDo.Data\obj\Debug\ToDo.Data.pdb
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\bin\Debug\ToDo.Data.dll
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\bin\Debug\ToDo.Data.pdb
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\bin\Debug\System.Collections.Immutable.dll
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\bin\Debug\System.ComponentModel.Annotations.xml
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\obj\Debug\ToDo.Data.csprojAssemblyReference.cache
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\obj\Debug\ToDo.Data.csproj.CoreCompileInputs.cache
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\obj\Debug\ToDo.Data.csproj.CopyComplete
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\obj\Debug\ToDo.Data.dll
+C:\Users\pawlenko\Desktop\ToDoApp\ToDo.Data\obj\Debug\ToDo.Data.pdb

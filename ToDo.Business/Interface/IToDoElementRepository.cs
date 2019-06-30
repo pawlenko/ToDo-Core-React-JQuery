@@ -10,7 +10,7 @@ namespace ToDo.Business.Interface
     {
          Task<IEnumerable<ToDoElement>> GetAllToDo();
          Task<ToDoElement> GetElementById(int id);
-         Task<ToDoElement> CreateElementAsync(string Tittle);
+         Task<ToDoElement> CreateElementAsync(ToDoElement state);
          Task<ToDoElement> UpdateToDoAsync(ToDoElement state);
          Task DeleteToDoAsync(ToDoElement element);
     }

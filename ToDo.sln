@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Business", "ToDo.Busin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.API", "ToDo.API\ToDo.API.csproj", "{869E55DB-3950-473D-9982-0D2FAB8608F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Unit.Test", "ToDo.Unit.Test\ToDo.Unit.Test.csproj", "{7FFE9BF8-7EE3-4400-BB6D-E5D7BD12398D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Unit.Test", "ToDo.Unit.Test\ToDo.Unit.Test.csproj", "{7FFE9BF8-7EE3-4400-BB6D-E5D7BD12398D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\ToDo.Business.csproj": {}
+    "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Business\\ToDo.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\ToDo.Business.csproj": {
+    "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Business\\ToDo.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\ToDo.Business.csproj",
+        "projectUniqueName": "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Business\\ToDo.Business.csproj",
         "projectName": "ToDo.Business",
-        "projectPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\ToDo.Business.csproj",
+        "projectPath": "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Business\\ToDo.Business.csproj",
         "packagesPath": "C:\\Users\\pawlenko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Business\\obj\\",
+        "outputPath": "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj": {
-                "projectPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj"
+              "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Data\\ToDo.Data.csproj": {
+                "projectPath": "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Data\\ToDo.Data.csproj"
               }
             }
           }
@@ -64,12 +64,12 @@
         }
       }
     },
-    "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj": {
+    "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Data\\ToDo.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj",
+        "projectUniqueName": "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Data\\ToDo.Data.csproj",
         "projectName": "ToDo.Data",
-        "projectPath": "C:\\Users\\pawlenko\\Desktop\\TODO\\ToDo\\ToDo.Data\\ToDo.Data.csproj"
+        "projectPath": "C:\\Users\\pawlenko\\Desktop\\ToDoApp\\ToDo.Data\\ToDo.Data.csproj"
       },
       "frameworks": {
         "net472": {}

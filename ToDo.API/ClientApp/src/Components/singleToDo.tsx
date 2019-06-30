@@ -73,7 +73,11 @@ class SingleToDo extends React.Component<Props,SingleToDoState>{
 
 
 
-        <li className={"list-group-item d-flex justify-content-between align-items-center " + (this.props.todo.done ? ' doneToDo' : '')}>
+               <li className={"list-group-item d-flex justify-content-between align-items-center " + (this.props.todo.done ? ' doneToDo' : '')}>
+
+                   {this.props.todo.priority}
+
+
             {
                 this.state.editMode === false &&
                      this.props.todo.tittle

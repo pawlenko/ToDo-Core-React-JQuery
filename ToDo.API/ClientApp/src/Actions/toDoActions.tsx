@@ -97,12 +97,12 @@ export const removeToDoRequest = (todo : todoelement) =>{
     }
 }
 
-export const addToDoRequest = (tittle:string)=>{
+export const addToDoRequest = (tittle:string,priority: number)=>{
     return(dispatch : Dispatch<AppActions>,getState: ()=> AppState)=>{
         dispatch(
             StartFetch()
         );
-         axios.post<ToDoElement>('/api/todo',{tittle:tittle}).then(res=>{
+        axios.post<ToDoElement>('/api/todo', { tittle: tittle, priority: priority }).then(res => {
             dispatch(
                 AddToDoRequest(res.data)
             );

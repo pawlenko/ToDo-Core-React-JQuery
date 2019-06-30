@@ -10,7 +10,9 @@ namespace ToDo.API.DTO
         public int Id { get; set; }
         public string Tittle { get; set; }
         public DateTime CreateDate { get; set; }
-
         public bool Done { get; set; }
+
+        public int Priority { get; set; }
+                    
     }
 }

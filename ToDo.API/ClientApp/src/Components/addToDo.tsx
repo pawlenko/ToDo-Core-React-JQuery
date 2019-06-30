@@ -10,7 +10,8 @@ import { bindActionCreators } from 'redux';
 
 interface AddToDoProps{}
 interface AddToDoState{
-    name:string;
+    name: string;
+    priority: number;
 }
 
 type Props = AddToDoProps & LinkDispatchProps;
@@ -19,15 +20,15 @@ type Props = AddToDoProps & LinkDispatchProps;
 
 class AddToDo extends React.Component<Props,AddToDoState>{
 
-
-   
    
     state:AddToDoState ={
-        name : ""
+        name: "",
+        priority:0
     }
+
     formSubmit = (e: React.FormEvent) =>{
         e.preventDefault();
-        this.props.addToDoRequest(this.state.name);
+        this.props.addToDoRequest(this.state.name, this.state.priority);
     }
 
     handleChange = (event: React.FormEvent<HTMLInputElement>) => {
@@ -36,12 +37,19 @@ class AddToDo extends React.Component<Props,AddToDoState>{
         });
     }
 
+    handlePriorityChange = (event: React.FormEvent<HTMLInputElement>) => {
+        this.setState({
+            priority: event.currentTarget.valueAsNumber
+        });
+    }
+
 
     render(){
         return (
             <form className="form-inline justify-content-center" onSubmit={this.formSubmit}>
                 <div className="input-group mb-2 mr-sm-2 mb-sm-0">
-                <input type="text" className="form-control" id="name" placeholder="Task name"   onChange={this.handleChange}/>
+                    <input type="text" className="form-control" id="name" placeholder="Task name" onChange={this.handleChange} />
+                    <input type="number" min="1" max="10"  className="form-control" id="priority" placeholder="priority" onChange={this.handlePriorityChange} />
                 </div>
                 <button type="submit" className="btn btn-primary my-2 my-sm-0">Add task</button>
             </form>
@@ -50,7 +58,7 @@ class AddToDo extends React.Component<Props,AddToDoState>{
 } 
 
 interface LinkDispatchProps{
-    addToDoRequest: (name: string) =>void;
+    addToDoRequest: (name: string,priority: number) =>void;
 }
 
 
